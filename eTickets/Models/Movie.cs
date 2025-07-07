@@ -1,0 +1,31 @@
+﻿using eTickets.Data;
+using System.ComponentModel.DataAnnotations;
+
+namespace eTickets.Models
+{
+    public class Movie
+    {
+        [Key]
+        public int MovieId { get; set; }
+
+        public string Name { get; set; }
+
+        public string Description { get; set; }
+
+        public DateTime StartDate { get; set; }
+
+        public DateTime EndDate { get; set; }
+
+        public double Price { get; set; }
+
+        public string CinemaName { get; set; }
+
+        //public List<Actor> Actors { get; set; }
+
+        public MovieCategory MovieCategory { get; set; }
+
+        //public Producer MovieProducer { get; set; }
+
+        public string ImageURL { get; set; }
+    }
+}
