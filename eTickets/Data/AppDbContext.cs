@@ -7,7 +7,7 @@ namespace eTickets.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        protected void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<ActorMovieAssignment>()
                 .HasKey(am => new

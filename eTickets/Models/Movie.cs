@@ -8,9 +8,6 @@ namespace eTickets.Models
     {
         [Key]
         public int MovieId { get; set; }
-
-        public string Name { get; set; }
-
         public string Description { get; set; }
 
         public DateTime StartDate { get; set; }
@@ -29,7 +26,7 @@ namespace eTickets.Models
 
         public MovieCategory MovieCategory { get; set; }
 
-        [ForeignKey("CinemaId")]
+        [ForeignKey("ProducerId")]
         public Producer Producer { get; set; }
 
         public int ProducerId { get; set; }
