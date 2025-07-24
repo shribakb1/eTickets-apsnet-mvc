@@ -10,10 +10,13 @@ namespace eTickets.Models
         public int MovieId { get; set; }
         public string Description { get; set; }
 
+        [DisplayFormat(DataFormatString = "{0:dd MMM yyyy}")]
         public DateTime StartDate { get; set; }
 
+        [DisplayFormat(DataFormatString = "{0:dd MMM yyyy}")]
         public DateTime EndDate { get; set; }
 
+        [DisplayFormat(DataFormatString = "{0:C}")]
         public double Price { get; set; }
 
         public string CinemaName { get; set; }
